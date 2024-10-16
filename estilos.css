@@ -2263,27 +2263,68 @@ button,
     margin-top: 0;
     padding-top: 0; }
 
-  #demo-header{
-    position: fixed;
-    left: 0;
-    right: 0;
-    width: 100%;
-
-  } 
+    .menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(55, 61, 73, 0.975);
+      padding: 10px 20px;
+  }
   
-  #demo-header .left{
-    position: absolute;
-    top: 0.5em;
-    left: 0.5em;
-    white-space: nowrap;
-    overflow: hidden;
+  .editorial {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      margin-right: 20px; /* Espacio entre el texto y las pestañas */
+  }
+  
+  .tabs {
+      display: flex;
+  }
+  
+  .tab {
+      background-color: #3d3d3d;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      margin-right: 5px;
+      cursor: pointer;
+      border-radius: 5px 5px 0 0;
+      transition: background-color 0.3s;
+  }
+  
+  .tab:hover {
+      background-color: #505050;
+  }
+  
+  .tab.active {
+      background-color: #4d4d4d;
+  }
+  
+  .actions {
+      display: flex;
+  }
+  
+  .action-button, .back-button, .download-button {
+      background-color: #3d3d3d;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      margin-left: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+  }
+  
+  .action-button:hover, .back-button:hover, .download-button:hover {
+      background-color: #505050;
+  }
+  
+  .download-button {
+      background-color: #d9534f;
+  }
+  
+  .download-button:hover {
+      background-color: #c9302c;
   }
 
-  #demo-header h1{
-    letter-spacing: -0.5px;
-    font-weight: 600;
-    height: 2.75em;
-    line-height: 2.75em;
-    margin: 0 1.25em 0 0.5em;
-    display: inline-block;
-  }
